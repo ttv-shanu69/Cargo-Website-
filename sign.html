@@ -1,0 +1,377 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header section of page -->
+    <header>
+        <div class="maincontainer-1"
+            style="background-image: url(Hero\ 1\ \(2\).png); background-size: cover; background-position: center; height: 325px; ">
+
+            <!-- navigation bar -->
+            <div class="container-fluid py-2 bg-primary">
+                <div class="row d-flex text-white">
+                    <div class="col fs-6 ps-5">
+                        <img src="Images & Icons/Vector (16).png" alt="">
+                        +92-305-1234567
+                    </div>
+                    <div class="col-md-3">
+                        <img src="Images & Icons/Vector (16).png" alt="">
+                        +92-305-1234567
+                    </div>
+                    <div class="col">
+                        <img src="Images & Icons/Vector (17).png" alt="">
+                        example@gmail.com
+                    </div>
+                    <div class="col text-center">
+                        <img src="Images & Icons/Vector.png" alt="">
+                        <img src="Images & Icons/Vector (1).png" alt="">
+                        <img src="Images & Icons/Vector (2).png" alt="">
+                        <img src="Images & Icons/Vector (3).png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <nav class="container-fluid w-100">
+                <img src="truck.png" alt="img" style="width: 180px; height: 90px; margin-left: 102px; background: transparent;">
+            <button type="button" class="btn" style="color: #F26A29; margin-left: 250px;"
+                onclick="navigateTohome()">HOME</button>
+            <button type="button" class="btn" style="color: white;" onclick="navigateToservices()">SERVICES</button>
+            <button type="button" class="btn" style="color: white; " onclick="navigateToabout()">ABOUT</button>
+            <button type="button" class="btn" style="color: white;" onclick="navigateTodashboard()">DASHBOARD</button>
+            <button type="button" class="btn" style="color: white;" onclick="navigateToquote()">QUOTE</button>
+            <button type="button" class="btn" style="color: white;" onclick="navigateTocontact()">CONTACT</button>
+            <button type="button" class="btn" style="color: white; background-color: #F26A29; "
+                onclick="navigateTosignin()">
+                <div> <svg width="12" height="20" viewBox="0 2 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 0C6.79565 0 7.55871 0.31607 8.12132 0.87868C8.68393 1.44129 9 2.20435 9 3C9 3.79565 8.68393 4.55871 8.12132 5.12132C7.55871 5.68393 6.79565 6 6 6C5.20435 6 4.44129 5.68393 3.87868 5.12132C3.31607 4.55871 3 3.79565 3 3C3 2.20435 3.31607 1.44129 3.87868 0.87868C4.44129 0.31607 5.20435 0 6 0ZM6 7.5C9.315 7.5 12 8.8425 12 10.5V12H0V10.5C0 8.8425 2.685 7.5 6 7.5Z"
+                            fill="#FCFAFA" />
+                    </svg>
+                    SIGN IN</div>
+            </button>
+            </nav>
+
+            <p class="text-center" style=" font-size: 50px; font-weight: 600; margin-top: 12px; color: #F26A29;">SIGN IN</p>
+            <p class="text-center">
+                <span style="font-size: 20px; font-weight: 600;  color: white;">Home /
+                </span>
+                <span style="font-size: 20px; font-weight: 600; color: #F26A29;">Sign In</span>
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- central container of login page -->
+    <div class="maincontainer"
+        style="background-image: url(background.jpeg); background-size: cover; background-position: center; height: 780px; padding-top: 100px;">
+        <div class="container"
+            style="width: 400px; border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); background-color: #fff;">
+
+
+            <!-- login form -->
+            <form>
+                <img src="Images & Icons/1 980.png" alt="Truck Transport Logo" class="logo my-3"
+                    style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.3333 12.4444H6.66667L8.44444 10.6667H13.3333M2.66667 12.4444V10.2222L9.67111 3.24444C9.84 3.06667 10.1244 3.06667 10.3022 3.24444L11.8667 4.80889C12.0444 4.98667 12.0444 5.26222 11.8667 5.44L4.86222 12.4444M14.2222 0H1.77778C0.791111 0 0 0.791111 0 1.77778V14.2222C0 14.6937 0.187301 15.1459 0.520699 15.4793C0.854097 15.8127 1.30628 16 1.77778 16H14.2222C14.6937 16 15.1459 15.8127 15.4793 15.4793C15.8127 15.1459 16 14.6937 16 14.2222V1.77778C16 0.791111 15.2 0 14.2222 0Z"
+                                    fill="black" fill-opacity="0.5" />
+                            </svg>
+
+                        </div>
+                        <input type="text" class="form-control" id="firstName" placeholder="Riched John">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.2 3.5L9 7.875L1.8 3.5V1.75L9 6.125L16.2 1.75M16.2 0H1.8C0.801 0 0 0.77875 0 1.75V12.25C0 12.7141 0.189642 13.1592 0.527208 13.4874C0.864773 13.8156 1.32261 14 1.8 14H16.2C16.6774 14 17.1352 13.8156 17.4728 13.4874C17.8104 13.1592 18 12.7141 18 12.25V1.75C18 0.77875 17.19 0 16.2 0Z"
+                                    fill="black" fill-opacity="0.5" />
+                            </svg>
+
+                        </div>
+                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.21778 6.49167C4.49778 8.85 6.56 10.7833 9.07556 11.9833L11.0311 10.15C11.28 9.91667 11.6267 9.85 11.9378 9.94167C12.9333 10.25 14 10.4167 15.1111 10.4167C15.3469 10.4167 15.573 10.5045 15.7397 10.6607C15.9064 10.817 16 11.029 16 11.25V14.1667C16 14.3877 15.9064 14.5996 15.7397 14.7559C15.573 14.9122 15.3469 15 15.1111 15C11.1034 15 7.25983 13.5074 4.42594 10.8507C1.59206 8.19391 0 4.59057 0 0.833333C0 0.61232 0.0936505 0.400358 0.260349 0.244078C0.427048 0.0877973 0.653141 0 0.888889 0H4C4.23575 0 4.46184 0.0877973 4.62854 0.244078C4.79524 0.400358 4.88889 0.61232 4.88889 0.833333C4.88889 1.875 5.06667 2.875 5.39556 3.80833C5.49333 4.1 5.42222 4.425 5.17333 4.65833L3.21778 6.49167Z"
+                                    fill="black" fill-opacity="0.5" />
+                            </svg>
+
+                        </div>
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="0305-1234567">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.99967 14.875C7.4417 14.875 7.86562 14.6906 8.17819 14.3624C8.49075 14.0342 8.66634 13.5891 8.66634 13.125C8.66634 12.1538 7.91634 11.375 6.99967 11.375C6.55765 11.375 6.13372 11.5594 5.82116 11.8876C5.5086 12.2158 5.33301 12.6609 5.33301 13.125C5.33301 13.5891 5.5086 14.0342 5.82116 14.3624C6.13372 14.6906 6.55765 14.875 6.99967 14.875ZM11.9997 7C12.4417 7 12.8656 7.18437 13.1782 7.51256C13.4907 7.84075 13.6663 8.28587 13.6663 8.75V17.5C13.6663 17.9641 13.4907 18.4092 13.1782 18.7374C12.8656 19.0656 12.4417 19.25 11.9997 19.25H1.99967C1.55765 19.25 1.13372 19.0656 0.821163 18.7374C0.508602 18.4092 0.333008 17.9641 0.333008 17.5V8.75C0.333008 7.77875 1.08301 7 1.99967 7H2.83301V5.25C2.83301 4.08968 3.27199 2.97688 4.0534 2.15641C4.8348 1.33594 5.89461 0.875 6.99967 0.875C7.54685 0.875 8.08867 0.988163 8.59419 1.20803C9.09971 1.42789 9.55904 1.75015 9.94595 2.15641C10.3329 2.56266 10.6398 3.04496 10.8492 3.57576C11.0586 4.10656 11.1663 4.67547 11.1663 5.25V7H11.9997ZM6.99967 2.625C6.33663 2.625 5.70075 2.90156 5.23191 3.39384C4.76307 3.88613 4.49967 4.55381 4.49967 5.25V7H9.49967V5.25C9.49967 4.55381 9.23628 3.88613 8.76744 3.39384C8.2986 2.90156 7.66272 2.625 6.99967 2.625Z"
+                                    fill="black" fill-opacity="0.5" />
+                            </svg>
+
+                        </div>
+                        <input type="password" class="form-control" id="password" placeholder="************">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-custom w-100" style="color: white; background-color: #F26A29;">Send
+                    Request</button>
+                <p class="mt-3">By selecting create account, you can agree our <a href="#" class="text-custom"
+                        style="color: #f77c41;">Term</a>
+                    &
+                    acknowledge our <a href="#" class="text-custom" style="color: #f77c41;">Global Privacy
+                        Statement</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- footer section of page -->
+    <footer class="text-white pt-4"
+        style="background-image: url(banner\ slider.jpeg); background-position: center; background-size: cover;">
+        <div class="container-fluid" style="background: #444444E5; margin-top: -24px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="truck.png" alt="Truck Transport Logo" class="img-fluid"
+                            style="width: 221px; height: auto;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper risus elit, non tristique
+                            enim
+                            porttitor eget. Vivamus metus purus, sollicitudin nec aliquam eu, dignissim ut odio.</p>
+                        <p>
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.21778 6.92444C4.49778 9.44 6.56 11.5022 9.07556 12.7822L11.0311 10.8267C11.28 10.5778 11.6267 10.5067 11.9378 10.6044C12.9333 10.9333 14 11.1111 15.1111 11.1111C15.3469 11.1111 15.573 11.2048 15.7397 11.3715C15.9064 11.5382 16 11.7643 16 12V15.1111C16 15.3469 15.9064 15.573 15.7397 15.7397C15.573 15.9064 15.3469 16 15.1111 16C11.1034 16 7.25983 14.4079 4.42594 11.5741C1.59206 8.74017 0 4.89661 0 0.888889C0 0.653141 0.0936505 0.427048 0.260349 0.260349C0.427048 0.0936505 0.653141 0 0.888889 0H4C4.23575 0 4.46184 0.0936505 4.62854 0.260349C4.79524 0.427048 4.88889 0.653141 4.88889 0.888889C4.88889 2 5.06667 3.06667 5.39556 4.06222C5.49333 4.37333 5.42222 4.72 5.17333 4.96889L3.21778 6.92444Z"
+                                        fill="white" />
+                                </svg>
+                                041-1234567
+                            </span>
+                            <span style="margin-left: 20px;">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.21778 6.92444C4.49778 9.44 6.56 11.5022 9.07556 12.7822L11.0311 10.8267C11.28 10.5778 11.6267 10.5067 11.9378 10.6044C12.9333 10.9333 14 11.1111 15.1111 11.1111C15.3469 11.1111 15.573 11.2048 15.7397 11.3715C15.9064 11.5382 16 11.7643 16 12V15.1111C16 15.3469 15.9064 15.573 15.7397 15.7397C15.573 15.9064 15.3469 16 15.1111 16C11.1034 16 7.25983 14.4079 4.42594 11.5741C1.59206 8.74017 0 4.89661 0 0.888889C0 0.653141 0.0936505 0.427048 0.260349 0.260349C0.427048 0.0936505 0.653141 0 0.888889 0H4C4.23575 0 4.46184 0.0936505 4.62854 0.260349C4.79524 0.427048 4.88889 0.653141 4.88889 0.888889C4.88889 2 5.06667 3.06667 5.39556 4.06222C5.49333 4.37333 5.42222 4.72 5.17333 4.96889L3.21778 6.92444Z"
+                                        fill="white" />
+                                </svg>
+                                0305-1234567
+                            </span><br>
+                            <span>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.2 3.5L9 7.875L1.8 3.5V1.75L9 6.125L16.2 1.75M16.2 0H1.8C0.801 0 0 0.77875 0 1.75V12.25C0 12.7141 0.189642 13.1592 0.527208 13.4874C0.864773 13.8156 1.32261 14 1.8 14H16.2C16.6774 14 17.1352 13.8156 17.4728 13.4874C17.8104 13.1592 18 12.7141 18 12.25V1.75C18 0.77875 17.19 0 16.2 0Z"
+                                        fill="white" />
+                                </svg>
+                                example@gmail.com
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-3"
+                        style="margin-top: 50px; margin-left: 30px; padding-left: 0px; padding-right: 0px;">
+                        <h5>Services</h5>
+                        <ul class="list-unstyled">
+                            <li style="margin-top: 8px;"><span style="margin-right: 10px;">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13.225L4.94467 7.5L0 1.7625L1.52227 0L8 7.5L1.52227 15L0 13.225Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span> Home Mover</li>
+                            <li style="margin-top: 8px;"><span style="margin-right: 10px;">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13.225L4.94467 7.5L0 1.7625L1.52227 0L8 7.5L1.52227 15L0 13.225Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span> Courier Delivery</li>
+                            <li style="margin-top: 8px;"><span style="margin-right: 10px;">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13.225L4.94467 7.5L0 1.7625L1.52227 0L8 7.5L1.52227 15L0 13.225Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span> Shipping By Road</li>
+                            <li style="margin-top: 8px;"><span style="margin-right: 10px;">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13.225L4.94467 7.5L0 1.7625L1.52227 0L8 7.5L1.52227 15L0 13.225Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span> Ocean Cargo</li>
+                            <li style="margin-top: 8px;"><span style="margin-right: 10px;">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13.225L4.94467 7.5L0 1.7625L1.52227 0L8 7.5L1.52227 15L0 13.225Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span> Office Relocation</li>
+                            <li style="margin-top: 8px;"><span style="margin-right: 10px;">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13.225L4.94467 7.5L0 1.7625L1.52227 0L8 7.5L1.52227 15L0 13.225Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span> LNG Transportation</li>
+                            <li style="margin-top: 8px;"><span style="margin-right: 10px;">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13.225L4.94467 7.5L0 1.7625L1.52227 0L8 7.5L1.52227 15L0 13.225Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span> Company Logistics</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3"
+                        style="margin-top: 50px; margin-left: -60px; padding-left: 0px; padding-right: 0px; width: 250px;">
+                        <h5>Recents</h5>
+                        <ul class="list-unstyled" style="margin-bottom: 0px;">
+                            <li style="margin-bottom: 13px;">
+                                <img src="https://s3-alpha-sig.figma.com/img/817b/e2f7/5c4b57314f5ccf5d2582336526c495a8?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oFEWWOHhMeMBTcvnZLvRrMyyLETXcJjs8~iqlvfViRCJ~SZPvaIOAmmZgS1-6kfBXUUnqDKfgdqTFoi8F8~n~YsFPbsWSMMoXBQMOCFOsHfFxXqJjOVx4Zahsx5DT7T1sWl-X0PVaJJ~1CkrpMWX1Xw3YJL-M1d8v8l-Tir4BTMVcqVtFiDpwiIX7q2voNYlOsrHiRIo4mTUA9hUwETazkJ8-8-yOfRJWs~5W6FlqsPkD6CqC68635PMjZuAfPH3Sy7wmqiNGmESzHSAHL1EUmGPPHH3qywJXftlmDCVLbgs8RcaF~-ACtqRzBMh-eqioKkk~abSQQxogR8o22UJkw__"
+                                    alt="" style="width: 65px; height: 65px">
+                                <span class="fw-normal badge text-wrap" style="text-align: left; width: 8rem;">
+                                    Lorem ipsum dolor sit amet, elit.
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 13px;">
+                                <img src="https://s3-alpha-sig.figma.com/img/ea0f/f00a/c6b66d41762d753c850d7b0b5dd3d4a6?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L0hyaH0zNe-ASwzWRV1OQplipcV37eRMdwoV5blRW1lV0x8-OcbuOr0jAm0EMC-omaDZMOM6hD1Km2Dncf0S5LusuGxRmOmaEfkZzx0sJbmGC42zHbFbxRcSLBa-S1TIfOjpLUw78VFaPFuEl9NitTLb5QEa0erU52nZRE~b2zL1p3btrxTkS3PRrQNkmGu~1~Bw49sHrBJzdc4Gq5SmmBPVY8wsiEVbTjNmA1m-ZhFa0rDklpCUEmBIMN5s0P0L9yz0Gjmw3ZzyIUJMNmm3v97c2xfC1oqtmFVnymNqZk06Bbr8XmE7kAUQ6jnWcqjJCdXeVCzqyvHhSXW4O4eT0g__"
+                                    alt=""
+                                    style="width: 65px; height: 65px; background-position: center; background-size: cover;">
+                                <span class="fw-normal badge text-wrap" style="text-align: left; width: 8rem;">
+                                    Lorem ipsum dolor sit amet, elit.
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 13px;">
+                                <img src="https://s3-alpha-sig.figma.com/img/37b3/89dd/46d19ad478c080951f3fc8dced5eef85?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XJbgzw8VlGN-axeZCziUGBC7HVDwRqVXnpFeNYbRyVU7GzXFmadnbZRr6lQEwOfSKM02SllzHBmT1xcGG1nPVJ1NReMkRrOGa8SA1~0qDjwtS1lthHHgxxf92OXhJ090z7Su2zhReg7Wl2HWRBOyq0YLV~N36dug4ECU~5slVPIkMetJXb584vy1CMLZBo09qP54Iegu0r0lS78eW2wh-V4vybLBcKhq9fIa0RexkT9r8rv5koWSj7Gnn4zvaTyGjA6qXbZDHLulif-jOdV8~sDv1BFAZjlTZ3uQBcL7juw8zjY2i-YgD6HXWzGExOrYd1OJ8wrdSkNilZPsBKoVWg__"
+                                    alt="" style="width: 65px; height: 65px;">
+                                <span class="fw-normal badge text-wrap" style="text-align: left; width: 8rem;">
+                                    Lorem ipsum dolor sit amet, elit.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3"
+                        style="margin-top: 50px; margin-left: 0px; padding-left: 0px; padding-right: 0px;">
+                        <h5>Twitter</h5>
+                        <div class="d-flex" style="flex-basis: 100px;">
+                            <img src="https://s3-alpha-sig.figma.com/img/817b/e2f7/5c4b57314f5ccf5d2582336526c495a8?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oFEWWOHhMeMBTcvnZLvRrMyyLETXcJjs8~iqlvfViRCJ~SZPvaIOAmmZgS1-6kfBXUUnqDKfgdqTFoi8F8~n~YsFPbsWSMMoXBQMOCFOsHfFxXqJjOVx4Zahsx5DT7T1sWl-X0PVaJJ~1CkrpMWX1Xw3YJL-M1d8v8l-Tir4BTMVcqVtFiDpwiIX7q2voNYlOsrHiRIo4mTUA9hUwETazkJ8-8-yOfRJWs~5W6FlqsPkD6CqC68635PMjZuAfPH3Sy7wmqiNGmESzHSAHL1EUmGPPHH3qywJXftlmDCVLbgs8RcaF~-ACtqRzBMh-eqioKkk~abSQQxogR8o22UJkw__"
+                                alt="" style="width: 103px; height: 103px; margin-bottom: 15px; margin-right: 10px;">
+                            <img src="https://s3-alpha-sig.figma.com/img/9b54/4e39/e1576ad08467a182379c4a8b6b647d0e?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I56cot5-FGZ3pmX5QeXV8fmo3fvd8G~Y42sp0552SVuqCmPDL77u1OYtYKkUPB5Tn4yGtb5IXbkinFzhXhy9kmZ5TwW2-u7x9~~8ZoEZ1bZMPKV1ISdUiUag4lgjJ3ix7Rta6IWcI8~9jf57qbGNloyROqUBkH7j6DwnRNLB46I5t~rMs8uJ7ATLffZzBSskQo6uuLnDBuFgUXBte7hZkYe7biW9ifpNHNPXAePM06vorMEU3GqDTUodm7EZTfd1C144aJwO5TTS5R~nCQ8E3G00oLByXdbupGqSaPAyRlocAJdBOL5f3HR3gP7waNgyQYUUK6OXWg4SXbqEidUGRg__"
+                                alt="" style="width: 103px; height: 103px; margin-bottom: 15px; margin-right: 10px;">
+                            <img src="https://s3-alpha-sig.figma.com/img/acdf/ae13/7f48f8b8287230fa6c316bbfe0436439?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bUIgALm5cEJA9Sjg1hn71BWFMs9rVshEYLS35IbexltqxuEVf4KvGxbtkOOxb2vMbXWqwTw7i2k0~tfi9Kbn86VSBmEz~iwIWoN4F3kCucgDkIDOtm8QePTI2rQi1XVeMNTSLLjkJXjKnx6C~q6ZygG2R~Q1-QAS2xTuv~1lRFm1JFmQ2BHIGM7yclNguSsVFKqIy8wg3Zv8jS2c4WLiq14JwmOef2le7rC8hj6pg5dbCSgqvGg87sxNhepMQ1br9pE9dZU~do5WrYdj0n3Jw6Eg1ULzAD~lEJuyGBVfQsWw9JxEgrCLTEfU4kx4ZZ83v0N1OZCsOQePGGDGib9GiQ__"
+                                alt="" style="width: 103px; height: 103px; margin-bottom: 15px;">
+                            </div>
+
+                            <div class="nxt_3_images d-flex">
+                                <img src="https://s3-alpha-sig.figma.com/img/5d94/7696/28ea1e8343c3188a8aa41a6b33eb5ce8?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HzGAt4pV4y~0PRrK-le4O9nmophPZyTTjeh5Rpj9aLKjTlkBbOpmBPkr3JYy70l5MCplWVg9-7Di0jEN50QtvW-o5Rrl8HphdS188rxS9BWNfN3pIgIpXdWCpjQcPjjo5-Q8peoHUEj8fe~yX3AvwaOAqeLylYFxh~F3L5RYOIKD7SdgVsIRVBOMxJPrQpaWYrGnDWuEHY2BJdMI1ENfL8HggXMjM-s-Ww2z7b75vVJAlvWlJzuR04eWyKfg4qVulgPNJME8JuDmYxFPyRtgfe8DJmO3Ag41tKOARAbdkabKRiokZYbCXqx9lALCcEPVwyBorhvtHCRt32hIWLKe5w__"
+                                alt="" style="width: 103px; height: 103px; margin-right: 10px;">
+                            <img src="https://s3-alpha-sig.figma.com/img/181b/a47d/9e349009bc5094c493278969d2cfee15?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=azJyfziGi3kPdrVwLgO9y4yK5ceogIelug2K0JlOBzvEm9cQsEnbHwlV~NDJTon2NQ9KzbhYs~ESL4aK85DReUIUCSkYZzu28D2Ad-JHfpgnlJ44TAoFMekLO95EAHEaV6~WNkvNZ277IfHAnOpYtkNb4GX1NrRih4MthbzT910zxMgNQZrXwlPpuVcZjEVYNgV2V4xytmg7qlMOC5~snkhdhSr-r~rqVM2~9u1Kuu~~c4gpT-2ll2ymvlo02qUFLAliuX-bCPAEbrjGlfV8T9Pg-QS-NaLJLidZO6vv3td8NbUPrlw9uBJVHV0uZyrYDqOEFzz3ydQaVGWodlU-lA__"
+                                alt="" style="width: 103px; height: 103px; margin-right: 10px;">
+                            <img src="https://s3-alpha-sig.figma.com/img/4242/2e08/1066149f6f23ba429940718fa1ee83ee?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BTkC0Juds5CKgsm0O-B9JZfbVm4CNGJPWq-Fywrf7NbUJFD1YT43taIuWL9W~mYy4rN3Wi-rP0A0GrsI6~bGWQYKRx1vkFaD2D2BrYQ5IFMxHEf5F209sVsmluddM~FoJIEWLN3T9CL7OkwQ~5-cPSKxh~iqWTKAYovj8yWwkCthGNzl4JHkqBWuzXDLCZ6TMhW1fLGEqnYd3lGGjTdcJ7bsm9LsMRQMoGw1LaIAcvpSInzMOfkCPj0W9FqLysdk~1oZ4kOXkFFJZPPy2R3Pw1ipCWIniWOCk8prjSA3ZFYpyx3uXNcVSqyibnFRN9OdQHQAQBsWqZZMbfRJPQ5dVg__"
+                                alt="" style="width: 103px; height: 103px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width: auto; border: 1px solid #FFFFFF ">
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col text-start">
+                        <p>CopyRight @ 2022, All Rights Reserved</p>
+                    </div>
+                    <div class="col text-end">
+                        <p>Designed by Tanzeel ur Rehman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- custom functions to navigate pages  -->
+    <script>
+        function navigateTohome() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+    <script>
+        function navigateToservices() {
+            window.location.href = "services.html";
+        }
+    </script>
+
+    <script>
+        function navigateToabout() {
+            window.location.href = "about.html";
+        }
+    </script>
+
+    <script>
+        function navigateTocontact() {
+            window.location.href = "contact.html";
+        }
+    </script>
+
+    <script>
+        function navigateTodashboard() {
+            window.location.href = "dashboard.html";
+        }
+    </script>
+
+    <script>
+        function navigateToquote() {
+            window.location.href = "quote.html";
+        }
+    </script>
+
+    <script>
+        function navigateTosignin() {
+            window.location.href = "sign.html";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

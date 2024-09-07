@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid py-2 bg-primary">
+        <div class="row d-flex text-white">
+            <div class="col fs-6 ps-5">
+                <img src="Images & Icons/Vector (16).png" alt="">
+                +92-305-1234567
+            </div>
+            <div class="col-md-3">
+                <img src="Images & Icons/Vector (16).png" alt="">
+                +92-305-1234567
+            </div>
+            <div class="col">
+                <img src="Images & Icons/Vector (17).png" alt="">
+                example@gmail.com
+            </div>
+            <div class="col text-center">
+                <img src="Images & Icons/Vector.png" alt="">
+                <img src="Images & Icons/Vector (1).png" alt="">
+                <img src="Images & Icons/Vector (2).png" alt="">
+                <img src="Images & Icons/Vector (3).png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="hero-image.png" class="d-block w-100" alt="...">
+            <nav class="container-fluid w-100 position-absolute top-0">
+                <img src="truck.png" alt="img" style="width: 180px; height: 90px; margin-left: 102px; background: transparent;">
+            <button type="button" class="btn" style="color: white; margin-left: 250px;"
+                onclick="navigateTohome()">HOME</button>
+            <button type="button" class="btn" style="color: white;" onclick="navigateToservices()">SERVICES</button>
+            <button type="button" class="btn" style="color: #F26A29; " onclick="navigateToabout()">ABOUT</button>
+            <button type="button" class="btn" style="color: white;" onclick="navigateTodashboard()">DASHBOARD</button>
+            <button type="button" class="btn" style="color: white;" onclick="navigateToquote()">QUOTE</button>
+            <button type="button" class="btn" style="color: white;" onclick="navigateTocontact()">CONTACT</button>
+            <button type="button" class="btn" style="color: white; background-color: #F26A29; "
+                onclick="navigateTosignin()">
+                <div> <svg width="12" height="20" viewBox="0 2 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 0C6.79565 0 7.55871 0.31607 8.12132 0.87868C8.68393 1.44129 9 2.20435 9 3C9 3.79565 8.68393 4.55871 8.12132 5.12132C7.55871 5.68393 6.79565 6 6 6C5.20435 6 4.44129 5.68393 3.87868 5.12132C3.31607 4.55871 3 3.79565 3 3C3 2.20435 3.31607 1.44129 3.87868 0.87868C4.44129 0.31607 5.20435 0 6 0ZM6 7.5C9.315 7.5 12 8.8425 12 10.5V12H0V10.5C0 8.8425 2.685 7.5 6 7.5Z"
+                            fill="#FCFAFA" />
+                    </svg>
+                    SIGN IN</div>
+            </button>
+            </nav>
+            <div class="carousel-caption d-none d-md-block first_slide position-absolute">
+                <h3 class="fs-2 text-start title position-absolute">Welcome to</h3>
+                <h1 class="main_head text-start position-absolute">LOREM IPSUM <br> COMPANY</h1>
+                <div class="orange_div bg-primary h-4 w-17 position-absolute top-22"></div>
+                <p class="text-white position-absolute pl-80 mt-6 font-inter fs-7">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Ut semper risus elit, non tristique enim porttitor</p>
+                <p class="text-white position-absolute pl-80 mt-7 font-inter fs-7">eget. Vivamus metus purus.</p>
+                <button type="button" class="quote_btn btn btn-lg bg-primary text-white position-absolute top-50 d-flex align-items-center justify-content-around" style="left: 7%;"><img src="Images & Icons/quote.png" alt="">&nbsp;&nbsp;Get a Quote</button>
+              </div>
+            </div> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
